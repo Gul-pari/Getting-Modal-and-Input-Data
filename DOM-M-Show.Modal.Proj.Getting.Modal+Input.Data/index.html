@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>MODAL WINDOW</title>
+</head>
+
+<body>
+    <!-- <h1 class="main-head">DOM MANIPULATION|Show Modal PROJECT</h1> -->
+    
+  <div class="btns">
+
+    <button class="show-modal">Show Modal . 1</button>
+    <button class="show-modal">Show Modal . 2</button>
+    <button class="show-modal">Show Modal . 3</button>
+
+  </div>
+     
+    <p id="countryHolder">Your selected country will show up here!</p>
+
+    <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <h1>I am a modal 😍</h1>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Nisi sunt odio error iusto esse ab perferendis autem reprehenderit,
+            accusantium dolores rem numquam quibusdam iste nesciunt cum eveniet 
+            mollitia animi commodi.
+        </p>
+        
+        Select a country:
+        <select name="country" id="country">
+            <option value="" selected disabled>Country</option> <!--"selected disabled" property is selected by default but cant be selected again -->
+            <option value="America">America</option>
+            <option value="Canada">Canada</option>
+            <option value="Thailand">Thailand</option>
+            <option value="New Zealand">New Zealand</option>
+            <option value="South Korea">South Korea</option>
+        </select>
+        <br>
+        <button class="submit-btn">Submit</button>
+    </div>
+
+    <div class="overlay hidden"></div>
+
+    <script src="dom-manipulation.js"></script>
+</body>
+</html>
